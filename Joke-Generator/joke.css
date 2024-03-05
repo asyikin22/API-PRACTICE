@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.wrapper {
+    width: 70vmin;
+    padding: 50px 40px;
+    background-color: lightgray;
+    position: absolute;                     /*positions the element relative to its closest positioned ancestor*/
+    transform: translate(-50%, -50%);       /*centers position within its containign block*/
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    word-wrap: break-word;                  /*allows long words to wrap onto next line within container if it exceeds container's width*/
+    line-height: 35px;
+    margin: 20px 0;
+    opacity: 0;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+button {
+    display: block;
+    background-color: peachpuff;
+    border: none;
+    padding: 8px;
+    margin: 0 auto;    
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
